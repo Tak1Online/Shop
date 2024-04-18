@@ -1,0 +1,26 @@
+﻿<Window x:Class="Shop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Хлеб" FontSize="16"/>
+            <ComboBox Name="cbHleb" Width="300" Margin="0 10 0 0" FontSize="16">
+                <ComboBoxItem Content="Белый хлеб"/>
+                <ComboBoxItem Content="Черный хлеб"/>
+            </ComboBox>
+            <TextBlock Text="Количество хлеба" Margin="0 10 0 0" FontSize="16"/>
+            <TextBox x:Name="tbCount" Margin="0 10 0 0" FontSize="16"/>
+            <Button x:Name="btnAdd" Content="Добавить" Margin="0 10 0 0" FontSize="16" Click="btnAdd_Click"/>
+            <Button x:Name="btnDelete" Content="Удалить" Margin="0 10 0 0" FontSize="16" Click="btnDelete_Click"/>
+            <Button x:Name="btnDone" Content="Заказать" Margin="0 10 0 0" FontSize="16" Click="btnDone_Click"/>
+            <TextBlock x:Name="tbRezult" Margin="0 10 0 0" FontSize="16"/>
+            <TextBlock x:Name="tbOrder" Margin="0 10 0 0" FontSize="16" TextWrapping="Wrap" Height="60"/>
+        </StackPanel>
+       
+    </Grid>
+</Window>
